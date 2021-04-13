@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
-  * File Name          : gpio.h
-  * Description        : This file contains all the functions prototypes for 
-  *                      the gpio  
+  * File Name          : I2C.h
+  * Description        : This file provides code for the configuration
+  *                      of the I2C instances.
   ******************************************************************************
   *
   * COPYRIGHT(c) 2016 STMicroelectronics
@@ -31,10 +31,9 @@
   *
   ******************************************************************************
   */
-
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __gpio_H
-#define __gpio_H
+#ifndef __i2c_H
+#define __i2c_H
 #ifdef __cplusplus
  extern "C" {
 #endif
@@ -46,11 +45,13 @@
 
 /* USER CODE END Includes */
 
+extern I2C_HandleTypeDef hi2c1;
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
 
-void MX_GPIO_Init(void);
+void MX_I2C1_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
@@ -59,7 +60,7 @@ void MX_GPIO_Init(void);
 #ifdef __cplusplus
 }
 #endif
-#endif /*__ pinoutConfig_H */
+#endif /*__ i2c_H */
 
 /**
   * @}
